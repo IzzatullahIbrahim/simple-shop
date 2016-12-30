@@ -32,7 +32,7 @@ app.controller ('Product.ProductController',[
                 $scope.productList = response;
             })
         }
-
+ 
         $scope.addToCart = function (product){
             console.log ('This is the product: ', product)
         }
