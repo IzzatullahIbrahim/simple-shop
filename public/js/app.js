@@ -32,5 +32,15 @@ app.config ([
                 templateUrl: '/templates/product/edit.html',
                 controller: 'Product.ProductController'
             })
+        ;
+
+        // Cart Routing
+        $stateProvider
+            .state('cart',{
+                url:'/cart',
+                templateUrl: '/templates/cart/view.html',
+                controller: 'Cart.CartController'
+            })
+        ;
     }
 ])
