@@ -6,6 +6,9 @@ app.controller ('Cart.CartController', [
 
     // Callback function to create controller
     function ($scope, $http, $state, cartService){
-        console.log (cartService.getItemList());
+        // console.log (cartService.getItemList());
+
+        // Grab the product item list from the cart service
+        $scope.itemList = cartService.getItemList();
     }
 ]);

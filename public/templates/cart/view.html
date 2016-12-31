@@ -1,1 +1,12 @@
 <h2>Cart</h2>
+
+<!-- Render out the items in the cart's item list -->
+<ul>
+    <li ng-repeat="item in itemList">
+        {{ item.product.title }} <br>
+        {{ item.product.description }} <br>
+        {{ item.product.price }} <br>
+        {{ item.quantity }} <br>
+        {{ item.total }} <br>
+    </li>
+</ul>
